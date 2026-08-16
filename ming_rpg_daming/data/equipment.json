@@ -1,0 +1,272 @@
+{
+  "qualities": {
+    "white": {
+      "name": "普通",
+      "color": "#CCCCCC",
+      "multiplier": 1.0
+    },
+    "green": {
+      "name": "优秀",
+      "color": "#2ECC71",
+      "multiplier": 1.2
+    },
+    "blue": {
+      "name": "稀有",
+      "color": "#3498DB",
+      "multiplier": 1.5
+    },
+    "purple": {
+      "name": "珍品",
+      "color": "#9B59B6",
+      "multiplier": 1.8
+    },
+    "gold": {
+      "name": "史诗",
+      "color": "#F1C40F",
+      "multiplier": 2.2
+    },
+    "red": {
+      "name": "传说",
+      "color": "#E74C3C",
+      "multiplier": 2.8
+    }
+  },
+  "slots": [
+    "weapon",
+    "armor",
+    "ring",
+    "necklace"
+  ],
+  "slot_names": {
+    "weapon": "武器",
+    "armor": "衣服",
+    "ring": "戒指",
+    "necklace": "项链"
+  },
+  "items": [
+    {
+      "id": "wood_sword",
+      "name": "木刀",
+      "slot": "weapon",
+      "quality": "white",
+      "atk": 3,
+      "def": 0,
+      "level_req": 1,
+      "desc": "放牛娃的木刀，聊胜于无"
+    },
+    {
+      "id": "iron_sword",
+      "name": "铁剑",
+      "slot": "weapon",
+      "quality": "green",
+      "atk": 8,
+      "def": 0,
+      "level_req": 3,
+      "desc": "普通铁剑，军中常见"
+    },
+    {
+      "id": "steel_sword",
+      "name": "钢剑",
+      "slot": "weapon",
+      "quality": "blue",
+      "atk": 15,
+      "def": 0,
+      "level_req": 7,
+      "desc": "精钢打造，锋利无比"
+    },
+    {
+      "id": "red_tassel_spear",
+      "name": "红缨枪",
+      "slot": "weapon",
+      "quality": "blue",
+      "atk": 18,
+      "def": 2,
+      "level_req": 10,
+      "desc": "红巾军利器，刺击凌厉"
+    },
+    {
+      "id": "dragon_blade",
+      "name": "屠龙刀",
+      "slot": "weapon",
+      "quality": "gold",
+      "atk": 35,
+      "def": 5,
+      "level_req": 20,
+      "desc": "武林至尊，宝刀屠龙"
+    },
+    {
+      "id": "heaven_sword",
+      "name": "倚天剑",
+      "slot": "weapon",
+      "quality": "red",
+      "atk": 50,
+      "def": 8,
+      "level_req": 28,
+      "desc": "倚天不出，谁与争锋"
+    },
+    {
+      "id": "cloth_robe",
+      "name": "布衣",
+      "slot": "armor",
+      "quality": "white",
+      "atk": 0,
+      "def": 2,
+      "level_req": 1,
+      "desc": "粗布衣裳，遮体而已"
+    },
+    {
+      "id": "leather_armor",
+      "name": "皮甲",
+      "slot": "armor",
+      "quality": "green",
+      "atk": 0,
+      "def": 6,
+      "level_req": 3,
+      "desc": "牛皮缝制，轻便护身"
+    },
+    {
+      "id": "iron_armor",
+      "name": "铁甲",
+      "slot": "armor",
+      "quality": "blue",
+      "atk": 0,
+      "def": 12,
+      "level_req": 8,
+      "desc": "铁叶片片，刀枪难入"
+    },
+    {
+      "id": "general_armor",
+      "name": "将军铠",
+      "slot": "armor",
+      "quality": "purple",
+      "atk": 3,
+      "def": 20,
+      "level_req": 15,
+      "desc": "大将风范，威震三军"
+    },
+    {
+      "id": "dragon_robe",
+      "name": "龙袍",
+      "slot": "armor",
+      "quality": "red",
+      "atk": 5,
+      "def": 35,
+      "level_req": 28,
+      "desc": "九五之尊，天命所归"
+    },
+    {
+      "id": "copper_ring",
+      "name": "铜戒指",
+      "slot": "ring",
+      "quality": "white",
+      "atk": 1,
+      "def": 1,
+      "level_req": 1,
+      "desc": "铜制戒指，朴素无华"
+    },
+    {
+      "id": "silver_ring",
+      "name": "银戒指",
+      "slot": "ring",
+      "quality": "green",
+      "atk": 3,
+      "def": 2,
+      "level_req": 5,
+      "desc": "银饰戒指，略有光泽"
+    },
+    {
+      "id": "jade_ring",
+      "name": "玉扳指",
+      "slot": "ring",
+      "quality": "blue",
+      "atk": 5,
+      "def": 5,
+      "level_req": 10,
+      "desc": "和田美玉，温润养人"
+    },
+    {
+      "id": "gold_ring",
+      "name": "金戒指",
+      "slot": "ring",
+      "quality": "purple",
+      "atk": 8,
+      "def": 6,
+      "level_req": 18,
+      "desc": "足金打造，富贵逼人"
+    },
+    {
+      "id": "wood_beads",
+      "name": "木佛珠",
+      "slot": "necklace",
+      "quality": "white",
+      "atk": 0,
+      "def": 2,
+      "level_req": 1,
+      "desc": "皇觉寺佛珠，阿弥陀佛"
+    },
+    {
+      "id": "jade_pendant",
+      "name": "玉佩",
+      "slot": "necklace",
+      "quality": "green",
+      "atk": 2,
+      "def": 4,
+      "level_req": 5,
+      "desc": "玉佩吊坠，君子之风"
+    },
+    {
+      "id": "gold_pendant",
+      "name": "金锁",
+      "slot": "necklace",
+      "quality": "blue",
+      "atk": 4,
+      "def": 7,
+      "level_req": 10,
+      "desc": "长命金锁，祈福辟邪"
+    },
+    {
+      "id": "dragon_necklace",
+      "name": "龙纹项链",
+      "slot": "necklace",
+      "quality": "gold",
+      "atk": 10,
+      "def": 10,
+      "level_req": 22,
+      "desc": "龙纹缠绕，帝王之气"
+    }
+  ],
+  "drop_table": {
+    "tree": {
+      "white": 0.6,
+      "green": 0.3,
+      "blue": 0.08,
+      "purple": 0.02,
+      "gold": 0.0,
+      "red": 0.0
+    },
+    "shanzei": {
+      "white": 0.4,
+      "green": 0.35,
+      "blue": 0.18,
+      "purple": 0.06,
+      "gold": 0.01,
+      "red": 0.0
+    },
+    "yuan_bing": {
+      "white": 0.25,
+      "green": 0.35,
+      "blue": 0.25,
+      "purple": 0.1,
+      "gold": 0.04,
+      "red": 0.01
+    },
+    "boss": {
+      "white": 0.0,
+      "green": 0.1,
+      "blue": 0.3,
+      "purple": 0.35,
+      "gold": 0.2,
+      "red": 0.05
+    }
+  }
+}

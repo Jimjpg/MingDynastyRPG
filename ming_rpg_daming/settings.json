@@ -1,0 +1,10 @@
+{
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": true,
+    "[python]": {
+        "editor.defaultFormatter": null
+    },
+    "[json]": {
+        "files.encoding": "utf8"
+    }
+}

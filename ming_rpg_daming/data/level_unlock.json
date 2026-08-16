@@ -1,0 +1,38 @@
+{
+  "zhongli_north": {
+    "level_req": 1,
+    "map_name": "钟离北"
+  },
+  "zhongli_south": {
+    "level_req": 1,
+    "map_name": "钟离南"
+  },
+  "huangjue_temple": {
+    "level_req": 3,
+    "map_name": "皇觉寺"
+  },
+  "suzhou": {
+    "level_req": 6,
+    "map_name": "苏州"
+  },
+  "taipingfu": {
+    "level_req": 10,
+    "map_name": "太平府"
+  },
+  "yingtianfu": {
+    "level_req": 15,
+    "map_name": "应天府"
+  },
+  "huizhou": {
+    "level_req": 18,
+    "map_name": "徽州"
+  },
+  "zhedong": {
+    "level_req": 22,
+    "map_name": "浙东"
+  },
+  "yuan_capital": {
+    "level_req": 28,
+    "map_name": "元大都"
+  }
+}
