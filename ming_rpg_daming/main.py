@@ -3,7 +3,7 @@
 《大明王朝》复古像素RPG - 主程序
 技术栈: Python + Pygame
 玩法: 地图探索 / 等级挂机 / 装备收集 / 野怪战斗 / 主线剧情
-操作: 方向键移动 | 空格砍树/交互 | A挂机 | E装备面板 | F1地图编辑器 | 1-9选地块
+操作: 方向键移动 | 空格砍树/交互 | G挂机 | E装备面板 | F1地图编辑器 | 1-9选地块
 """
 import pygame
 import json
@@ -684,9 +684,9 @@ class Game:
             return
 
         # 正常游戏状态
-        if key == pygame.K_a:
+        if key == pygame.K_g:
             self.player.afk_mode = not self.player.afk_mode
-            self.show_message("挂机模式开启" if self.player.afk_mode else "挂机模式关闭")
+            self.show_message("挂机开启：原地修炼，每秒+8经验（按G取消）" if self.player.afk_mode else "挂机已关闭，可自由移动")
         elif key == pygame.K_e:
             self.state = "equipment"
             self.equip_panel_page = 0
@@ -1142,7 +1142,7 @@ class Game:
         self.screen.blit(pos_text, (bar_rect.x + 470, bar_rect.y + 24))
 
         # 操作提示
-        hint = "方向键移动 | 空格砍树 | A挂机 | E装备 | F1编辑器"
+        hint = "方向键移动 | 空格砍树 | G挂机 | E装备 | F1编辑器"
         hint_text = self.font_sm.render(hint, True, (150, 150, 150))
         self.screen.blit(hint_text, (bar_rect.x + 590, bar_rect.y + 15))
 
