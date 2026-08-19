@@ -86,19 +86,35 @@ MONSTER_TEMPLATES = {
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
+def resource_path(relative_path):
+    """获取资源绝对路径，兼容 PyInstaller 打包后的临时解压目录"""
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(BASE_DIR, relative_path)
+
+
+def get_save_dir():
+    """获取可写目录（保存编辑的地图等），打包后使用 exe 所在目录"""
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.dirname(sys.executable)
+    return BASE_DIR
+
+
 # ============================================================
 # 工具函数
 # ============================================================
 def load_json(rel_path):
     """加载UTF-8编码的JSON文件"""
-    full_path = os.path.join(BASE_DIR, rel_path)
+    full_path = resource_path(rel_path)
     with open(full_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
 def save_json(rel_path, data):
     """保存为UTF-8编码JSON"""
-    full_path = os.path.join(BASE_DIR, rel_path)
+    save_dir = get_save_dir()
+    full_path = os.path.join(save_dir, rel_path)
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
     with open(full_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -179,7 +195,7 @@ ITEM_ICON_SIZE = 20
 
 def load_image(rel_path):
     """加载PNG并转为带alpha的surface；缺失/损坏时返回None。"""
-    full = os.path.join(BASE_DIR, rel_path)
+    full = resource_path(rel_path)
     if not os.path.exists(full):
         return None
     try:
